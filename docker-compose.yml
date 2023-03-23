@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  playground:
+    image: dockage/shadowsocks-server:latest
+    container_name: vpn-server-playground
+    env_file: .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./vpn-agent:/usr/local/bin/vpn-agent
+    command: 'bash -c "vpn-agent run; tail -f /var/log/journal/vpn-agent.service.log"'
