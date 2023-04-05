@@ -26,5 +26,6 @@ vpn-agent run
 ```
 
 ## TODO
+- Добавить поддержку работы в контейнерах с помощью shadowsocks-manager (https://github.com/shadowsocks/shadowsocks-manager)
 - Если будут другие протоколы:
   - Добавить поддержку для run-команды разных vpn-протоколов
